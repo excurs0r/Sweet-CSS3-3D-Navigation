@@ -1,0 +1,115 @@
+/**********************************************************************
+ * General settings needed for floopy
+ *
+ *
+ **********************************************************************/
+html{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	perspective: 400px;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+/**********************************************************************
+ * Styling
+ *
+ *
+ **********************************************************************/
+body{
+	background-color: #666;
+}
+#floopy-wrapper{
+	background-color: #f1f1f1;
+}
+#floopy-toggle{
+	background-color: #BF2929;
+	color: #f1f1f1;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
+.floopy-navigation{
+	background-color: #333;
+    color: #FFF;
+}
+/**********************************************************************
+ * Positioning and animation effects
+ *
+ *
+ **********************************************************************/
+ .floopy-origin-top{
+ 	transform-origin: 50% 0px 0px;
+ }
+  .floopy-origin-left{
+ 	transform-origin: 0px 50% 0px;
+ }
+ .floopy-origin-right{
+ 	transform-origin: 100% 50% 0px;
+ }
+ .floopy-origin-bottom{
+ 	transform-origin: 50% 100% 0px;
+ }
+#floopy-toggle{
+	position: fixed;
+	left: 150px;
+	top: 150px;
+	z-index: 200;
+}
+#floopy-wrapper{
+	transition: all 0.5s;
+	position: absolute;
+	overflow: scroll;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+}
+.floopy-top, .floopy-bottom, .floopy-right, .floopy-left{
+    position: absolute;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.floopy-top{
+	top: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+.floopy-left{
+	top: 0px;
+    left: 0px;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.floopy-right{
+	top: 0px;
+    right: 0px;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.floopy-bottom{
+	width: 100%;
+    left: 0px;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.floopy-wrapper-transform-top, .floopy-wrapper-transform-bottom, .floopy-wrapper-transform-right, .floopy-wrapper-transform-left{
+	opacity: 0.5;
+}
+
+
+

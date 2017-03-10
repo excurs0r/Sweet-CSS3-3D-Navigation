@@ -1,0 +1,42 @@
+
+ Floopy documentation
+
+#####################
+
+At first you need to include:
+
+- jQuery
+- floopy.js
+- floopy.css
+
+-----------------------------
+
+replace {position} with left, right, top or bottom ... wherever you want the menu
+
+- Give the menu wrapper the class 'floopy-navigation' and 'floopy-{position}'
+- Then wrap the whole content with a div, which needs the id 'floopy-wrapper' and the class 'floopy-origin-{position}'
+- at least you will need a toggle Element. Give it the id 'floopy-toggle' and a data-position tag with the {position}
+
+It might be good to set the toggle element fixed.
+
+----------------------------
+
+Example:
+
+
+<nav class="floopy-left floopy-navigation">
+<ul>
+	<li>Menüpunkt 1</li>
+	<li>Menüpunkt 2</li>
+	<li>Menüpunkt 3</li>
+	<li>Menüpunkt 4</li>
+	<li>Menüpunkt 5</li>
+</ul>
+</nav>
+<input type="button" id="floopy-toggle" data-position="left" value="Toggle" />
+
+<div id="floopy-wrapper" class="floopy-origin-left">
+
+	...
+
+</div>
